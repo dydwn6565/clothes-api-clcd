@@ -5,7 +5,6 @@ const cors = require("cors");
 const bodyparser = require("body-parser");
 
 
-
 app.use(cors({ origin: "*" }));
 app.use(express.json({ extended: false }));
 
