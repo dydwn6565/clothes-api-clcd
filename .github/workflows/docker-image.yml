@@ -26,9 +26,13 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
-        # image: dydwn6565/clothes-api/demo-app
+        
         context: .
-        file: Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}
+        tags: user/app:latest
+        # image: dydwn6565/clothes-api/demo-app
+        # context: .
+        # file: ./Dockerfile
+        # push: true
+        # tags: ${{ secrets.DOCKERHUB_USERNAME }}
         # tags: user/app:latest

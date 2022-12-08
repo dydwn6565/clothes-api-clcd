@@ -14,6 +14,6 @@ app.use(bodyparser.json());
 
 app.use("/api/items", items);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
