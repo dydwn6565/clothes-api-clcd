@@ -47,7 +47,7 @@ jobs:
         --application-name nodejs-express-app \
         --deployment-group-name nodejs-express-app-cd1 \
         --deployment-config-name CodeDeployDefault.OneAtATime \
-        --github-location repository=${{ github.repository }},commitId=${{ github.dydwn6565 }}
+        --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
         
         
       # image: dydwn6565/clothes-api/demo-app
